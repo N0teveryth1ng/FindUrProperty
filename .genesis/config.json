@@ -1,0 +1,68 @@
+{
+  "collections": [
+    {
+      "name": "posts",
+      "label": "Blog Posts",
+      "folder": "content/posts",
+      "format": "json",
+      "icon": "FileText",
+      "description": "Visual article records committed back to your repo",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "slug",
+          "label": "Slug",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "type": "textarea"
+        },
+        {
+          "name": "published",
+          "label": "Published",
+          "type": "boolean"
+        },
+        {
+          "name": "publishedAt",
+          "label": "Publish Date",
+          "type": "date"
+        }
+      ]
+    },
+    {
+      "name": "pages",
+      "label": "Pages",
+      "folder": "content/pages",
+      "format": "json",
+      "icon": "Globe",
+      "description": "Static website page configurations",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Page Title",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "slug",
+          "label": "Slug Path",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "content",
+          "label": "Markdown Content",
+          "type": "textarea"
+        }
+      ]
+    }
+  ]
+}
